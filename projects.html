@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự Án - Thiết Kế Và Thi Công Xây Dựng ĐẠI CÁT</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <span class="fw-bold text-primary">THIẾT KẾ VÀ XÂY DỰNG</span> <span class="text-dark">ĐẠI CÁT</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">DỊCH VỤ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="projects.html">DỰ ÁN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold">DỰ ÁN TIÊU BIỂU</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Dự án</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="project-filter py-4">
+        <div class="container">
+            <div class="text-center">
+                <div class="filter-buttons">
+                    <button class="btn btn-outline-primary filter-btn active me-2 mb-2" data-filter="all">Tất cả</button>
+                    <button class="btn btn-outline-primary filter-btn me-2 mb-2" data-filter="apartment">Căn hộ</button>
+                    <button class="btn btn-outline-primary filter-btn me-2 mb-2" data-filter="house">Nhà phố</button>
+                    <button class="btn btn-outline-primary filter-btn me-2 mb-2" data-filter="office">Văn phòng</button>
+                    <button class="btn btn-outline-primary filter-btn me-2 mb-2" data-filter="restaurant">Nhà hàng</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="apartment">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/du-an-noi-bat-3.jpg" class="card-img-top" alt="Dự án căn hộ hiện đại">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Căn hộ</span>
+                            <h5 class="card-title">Căn hộ cao cấp Masteri Thảo Điền</h5>
+                            <p class="card-text">Thiết kế và thi công nội thất căn hộ 3 phòng ngủ với phong cách hiện đại, sang trọng và tiện nghi.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#projectModal1">Chi tiết dự án</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="house">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/du-an-2.jpg" class="card-img-top" alt="Dự án nhà phố hiện đại">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Nhà phố</span>
+                            <h5 class="card-title">Nhà phố liền kề Phú Mỹ Hưng</h5>
+                            <p class="card-text">Thiết kế và thi công trọn gói nhà phố 3 tầng với phong cách tối giản, kết hợp giữa công năng và thẩm mỹ.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#projectModal2">Chi tiết dự án</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="office">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/du-an-3.jpg" class="card-img-top" alt="Dự án văn phòng">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Văn phòng</span>
+                            <h5 class="card-title">Văn phòng công ty Remax Plaza</h5>
+                            <p class="card-text">Thiết kế và thi công văn phòng mở với không gian làm việc sáng tạo, năng động và chuyên nghiệp.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#projectModal3">Chi tiết dự án</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="apartment">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/du-an-4.jpg" class="card-img-top" alt="Dự án căn hộ">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Căn hộ</span>
+                            <h5 class="card-title">Căn hộ 2 phòng ngủ</h5>
+                            <p class="card-text">Thiết kế và thi công căn hộ 2 phòng ngủ với phong cách hiện đại, tiện nghi và sang trọng.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#projectModal4">Chi tiết dự án</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="apartment">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/du-an-5.jpg" class="card-img-top" alt="Dự án căn hộ">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Căn hộ</span>
+                            <h5 class="card-title">Căn hộ duplex Vinhomes Central Park</h5>
+                            <p class="card-text">Thiết kế và thi công căn hộ duplex với không gian mở, tận dụng tối đa ánh sáng tự nhiên và tầm nhìn panorama.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#projectModal5">Chi tiết dự án</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="house">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/du-an-6.jpg" class="card-img-top" alt="Dự án biệt thự">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Nhà ở</span>
+                            <h5 class="card-title">Nhà ở vườn Flamingo Đại Lải</h5>
+                            <p class="card-text">Thiết kế và thi công biệt thự nghỉ dưỡng với phong cách Indochine, kết hợp hài hòa giữa kiến trúc và cảnh quan.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#projectModal6">Chi tiết dự án</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal 1 -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Căn hộ cao cấp Masteri Thảo Điền</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8 mb-4 mb-md-0">
+                            <div id="projectCarousel1" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/du-an-noi-bat-3.jpg" class="d-block w-100" alt="Chi tiết dự án 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/chi-tiet-du-an-1-1.jpg" class="d-block w-100" alt="Chi tiết dự án 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/chi-tiet-du-an-1-2.jpg" class="d-block w-100" alt="Chi tiết dự án 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel1" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel1" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Thông tin dự án</h4>
+                            <ul class="list-unstyled">
+                                <li><strong>Địa điểm:</strong> Quận 2, TP.HCM</li>
+                                <li><strong>Diện tích:</strong> 120m²</li>
+                                <li><strong>Thời gian:</strong> 2 tháng</li>
+                                <li><strong>Dịch vụ:</strong> Thiết kế và thi công nội thất</li>
+                                <li><strong>Phong cách:</strong> Hiện đại, sang trọng</li>
+                            </ul>
+                            <h4 class="mt-4">Mô tả dự án</h4>
+                            <p>Dự án thiết kế và thi công nội thất căn hộ 3 phòng ngủ tại Masteri Thảo Điền với phong cách hiện đại, sang trọng. Không gian sống được tối ưu hóa cho gia đình 4 thành viên với đầy đủ công năng và tiện nghi.</p>
+                            <p>Tông màu chủ đạo của căn hộ là trắng, xám và nâu gỗ, tạo cảm giác ấm cúng nhưng vẫn thanh lịch. Ánh sáng tự nhiên được tận dụng tối đa thông qua việc sử dụng rèm cửa thông minh và bố trí nội thất hợp lý.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Modal 2 -->
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Nhà phố liền kề Phú Mỹ Hưng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8 mb-4 mb-md-0">
+                            <div id="projectCarousel2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/du-an-2.jpg" class="d-block w-100" alt="Chi tiết dự án 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/chi-tiet-du-an-2-2.jpg" class="d-block w-100" alt="Chi tiết dự án 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/chi-tiet-du-an-2-3.jpg" class="d-block w-100" alt="Chi tiết dự án 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Thông tin dự án</h4>
+                            <ul class="list-unstyled">
+                                <li><strong>Địa điểm:</strong> Quận 2, TP.HCM</li>
+                                <li><strong>Diện tích:</strong> 120m²</li>
+                                <li><strong>Thời gian:</strong> 2 tháng</li>
+                                <li><strong>Dịch vụ:</strong> Thiết kế và thi công nội thất</li>
+                                <li><strong>Phong cách:</strong> Hiện đại, sang trọng</li>
+                            </ul>
+                            <h4 class="mt-4">Mô tả dự án</h4>
+                            <p>Dự án thiết kế và thi công nội thất căn hộ 3 phòng ngủ tại Masteri Thảo Điền với phong cách hiện đại, sang trọng. Không gian sống được tối ưu hóa cho gia đình 4 thành viên với đầy đủ công năng và tiện nghi.</p>
+                            <p>Tông màu chủ đạo của căn hộ là trắng, xám và nâu gỗ, tạo cảm giác ấm cúng nhưng vẫn thanh lịch. Ánh sáng tự nhiên được tận dụng tối đa thông qua việc sử dụng rèm cửa thông minh và bố trí nội thất hợp lý.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Modal 3 -->
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Văn phòng công ty công nghệ TechX</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8 mb-4 mb-md-0">
+                            <div id="projectCarousel3" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/du-an-3.jpg" class="d-block w-100" alt="Chi tiết dự án 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/chi-tiet-du-an-3-2.jpg" class="d-block w-100" alt="Chi tiết dự án 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/chi-tiet-du-an-3-3.jpg" class="d-block w-100" alt="Chi tiết dự án 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel3" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel3" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Thông tin dự án</h4>
+                            <ul class="list-unstyled">
+                                <li><strong>Địa điểm:</strong> Quận 2, TP.HCM</li>
+                                <li><strong>Diện tích:</strong> 120m²</li>
+                                <li><strong>Thời gian:</strong> 2 tháng</li>
+                                <li><strong>Dịch vụ:</strong> Thiết kế và thi công nội thất</li>
+                                <li><strong>Phong cách:</strong> Hiện đại, sang trọng</li>
+                            </ul>
+                            <h4 class="mt-4">Mô tả dự án</h4>
+                            <p>Dự án thiết kế và thi công nội thất căn hộ 3 phòng ngủ tại Masteri Thảo Điền với phong cách hiện đại, sang trọng. Không gian sống được tối ưu hóa cho gia đình 4 thành viên với đầy đủ công năng và tiện nghi.</p>
+                            <p>Tông màu chủ đạo của căn hộ là trắng, xám và nâu gỗ, tạo cảm giác ấm cúng nhưng vẫn thanh lịch. Ánh sáng tự nhiên được tận dụng tối đa thông qua việc sử dụng rèm cửa thông minh và bố trí nội thất hợp lý.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Modal 4 -->
+    <div class="modal fade" id="projectModal4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Căn hộ 2 phòng ngủ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8 mb-4 mb-md-0">
+                            <div id="projectCarousel4" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/du-an-4.jpg" class="d-block w-100" alt="Chi tiết dự án 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/chi-tiet-du-an-4-2.jpg" class="d-block w-100" alt="Chi tiết dự án 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/chi-tiet-du-an-4-3.jpg" class="d-block w-100" alt="Chi tiết dự án 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel4" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel4" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Thông tin dự án</h4>
+                            <ul class="list-unstyled">
+                                <li><strong>Địa điểm:</strong> Quận 2, TP.HCM</li>
+                                <li><strong>Diện tích:</strong> 120m²</li>
+                                <li><strong>Thời gian:</strong> 2 tháng</li>
+                                <li><strong>Dịch vụ:</strong> Thiết kế và thi công nội thất</li>
+                                <li><strong>Phong cách:</strong> Hiện đại, sang trọng</li>
+                            </ul>
+                            <h4 class="mt-4">Mô tả dự án</h4>
+                            <p>Dự án thiết kế và thi công nội thất căn hộ 2 phòng ngủ tại Masteri Thảo Điền với phong cách hiện đại, sang trọng. Không gian sống được tối ưu hóa cho gia đình 4 thành viên với đầy đủ công năng và tiện nghi.</p>
+                            <p>Tông màu chủ đạo của căn hộ là trắng, xám và nâu gỗ, tạo cảm giác ấm cúng nhưng vẫn thanh lịch. Ánh sáng tự nhiên được tận dụng tối đa thông qua việc sử dụng rèm cửa thông minh và bố trí nội thất hợp lý.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Modal 5 -->
+    <div class="modal fade" id="projectModal5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Căn hộ duplex Vinhomes Central Park</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8 mb-4 mb-md-0">
+                            <div id="projectCarousel5" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/du-an-5.jpg" class="d-block w-100" alt="Chi tiết dự án 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/chi-tiet-du-an-5-2.jpg" class="d-block w-100" alt="Chi tiết dự án 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/chi-tiet-du-an-5-3.jpg" class="d-block w-100" alt="Chi tiết dự án 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel5" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel5" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Thông tin dự án</h4>
+                            <ul class="list-unstyled">
+                                <li><strong>Địa điểm:</strong> Quận 2, TP.HCM</li>
+                                <li><strong>Diện tích:</strong> 120m²</li>
+                                <li><strong>Thời gian:</strong> 2 tháng</li>
+                                <li><strong>Dịch vụ:</strong> Thiết kế và thi công nội thất</li>
+                                <li><strong>Phong cách:</strong> Hiện đại, sang trọng</li>
+                            </ul>
+                            <h4 class="mt-4">Mô tả dự án</h4>
+                            <p>Dự án thiết kế và thi công nội thất căn hộ duplex Vinhomes Central Park với phong cách hiện đại, sang trọng. Không gian sống được tối ưu hóa cho gia đình 4 thành viên với đầy đủ công năng và tiện nghi.</p>
+                            <p>Tông màu chủ đạo của căn hộ là trắng, xám và nâu gỗ, tạo cảm giác ấm cúng nhưng vẫn thanh lịch. Ánh sáng tự nhiên được tận dụng tối đa thông qua việc sử dụng rèm cửa thông minh và bố trí nội thất hợp lý.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Modal 6 -->
+    <div class="modal fade" id="projectModal6" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Nhà ở vườn Flamingo Đại Lải</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8 mb-4 mb-md-0">
+                            <div id="projectCarousel6" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/du-an-6.jpg" class="d-block w-100" alt="Chi tiết dự án 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/chi-tiet-du-an-6-2.jpg" class="d-block w-100" alt="Chi tiết dự án 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/chi-tiet-du-an-6-3.jpg" class="d-block w-100" alt="Chi tiết dự án 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel6" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel6" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Thông tin dự án</h4>
+                            <ul class="list-unstyled">
+                                <li><strong>Địa điểm:</strong> Quận 2, TP.HCM</li>
+                                <li><strong>Diện tích:</strong> 120m²</li>
+                                <li><strong>Thời gian:</strong> 2 tháng</li>
+                                <li><strong>Dịch vụ:</strong> Thiết kế và thi công nội thất</li>
+                                <li><strong>Phong cách:</strong> Hiện đại, sang trọng</li>
+                            </ul>
+                            <h4 class="mt-4">Mô tả dự án</h4>
+                            <p>Dự án thiết kế và thi công nội thất căn hộ duplex Vinhomes Central Park với phong cách hiện đại, sang trọng. Không gian sống được tối ưu hóa cho gia đình 4 thành viên với đầy đủ công năng và tiện nghi.</p>
+                            <p>Tông màu chủ đạo của căn hộ là trắng, xám và nâu gỗ, tạo cảm giác ấm cúng nhưng vẫn thanh lịch. Ánh sáng tự nhiên được tận dụng tối đa thông qua việc sử dụng rèm cửa thông minh và bố trí nội thất hợp lý.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="cta py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-9 mb-4 mb-lg-0">
+                    <h3 class="mb-0">Bạn có dự án cần tư vấn thiết kế và thi công?</h3>
+                    <p class="lead mb-0">Hãy liên hệ với chúng tôi để được tư vấn miễn phí.</p>
+                </div>
+                <div class="col-lg-3 text-lg-end">
+                    <a href="contact.html" class="btn btn-light btn-lg">Liên hệ ngay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-4">THIẾT KẾ VÀ XÂY DỰNG ĐẠI CÁT</h5>
+                    <p>Chúng tôi tự hào là đơn vị thiết kế và thi công nội thất cao cấp hàng đầu Việt Nam với hơn 10 năm kinh nghiệm trong lĩnh vực.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-4">LIÊN HỆ</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> 123 Đường ABC, Quận XYZ, TP.HCM</p>
+                    <p><i class="fas fa-phone me-2"></i> 0123 456 789</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@daicatdesign.com</p>
+                    <p><i class="fas fa-clock me-2"></i> Thứ 2 - Thứ 7: 8h - 18h</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-4">ĐĂNG KÝ NHẬN TIN</h5>
+                    <p>Đăng ký để nhận thông tin mới nhất về các dự án và khuyến mãi từ chúng tôi.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Email của bạn">
+                            <button class="btn btn-primary" type="submit">Đăng ký</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0"> 2025 Thiết Kế Và Thi Công Xây Dựng ĐẠI CÁT. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiết Kế Và Thi Công Xây Dựng ĐẠI CÁT</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+        .navbar-brand img {
+            max-height: 50px;
+        }
+        
+        .hero-bg {
+            background-image: url('images/anh-nen-daicat.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 500px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 100px 0;
+        }
+        
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+            color: white;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo-daicat.jpg" alt="ĐẠI CÁT Logo" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">DỊCH VỤ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">DỰ ÁN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Background Image -->
+    <section class="hero-bg">
+        <div class="container">
+            <div class="hero-content text-center">
+                <h1 class="display-4 fw-bold mb-4">THIẾT KẾ VÀ THI CÔNG XÂY DỰNG ĐẠI CÁT</h1>
+                <p class="lead mb-4">Đối tác tin cậy cho không gian sống đẳng cấp và sang trọng</p>
+                <a href="contact.html" class="btn btn-primary btn-lg">Liên hệ ngay</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">VỀ CHÚNG TÔI</h2>
+                    <p>Chúng tôi tự hào là đơn vị hàng đầu trong lĩnh vực tư vấn thiết kế, thi công xây dựng và sửa chữa với hơn 10 năm kinh nghiệm. Đội ngũ kiến trúc sư, kỹ sư và thợ lành nghề của chúng tôi luôn nỗ lực mang đến những giải pháp xây dựng tối ưu, đáp ứng mọi yêu cầu khắt khe của khách hàng về chất lượng và thẩm mỹ. Chúng tôi cam kết đồng hành cùng khách hàng từ khâu ý tưởng cho đến hoàn thiện công trình, đảm bảo sự hài lòng và bền vững trong từng dự án.</p>
+                    <a href="services.html" class="btn btn-outline-primary">Tìm hiểu thêm</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/anh-nen-daicat.jpg" class="img-fluid rounded" alt="Về chúng tôi">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">DỊCH VỤ CỦA CHÚNG TÔI</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="images/tu-van-thiet-ke.jpg" class="card-img-top" alt="Tư vấn thiết kế">
+                        <div class="card-body">
+                            <h5 class="card-title">Tư vấn thiết kế</h5>
+                            <p class="card-text">Chúng tôi cung cấp dịch vụ tư vấn thiết kế chuyên nghiệp cho các công trình nhà ở, văn phòng và các không gian thương mại.</p>
+                            <a href="services.html" class="btn btn-outline-primary">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="images/thi-cong-xay-dung.jpg" class="card-img-top" alt="Thi công xây dựng">
+                        <div class="card-body">
+                            <h5 class="card-title">Thi công xây dựng</h5>
+                            <p class="card-text">Với đội ngũ kỹ sư và công nhân lành nghề, chúng tôi cung cấp dịch vụ thi công xây dựng nhà ở, biệt thự, văn phòng và các công trình thương mại.</p>
+                            <a href="services.html" class="btn btn-outline-primary">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="images/cai-tao-sua-chua.jpg" class="card-img-top" alt="Cải tạo và sửa chữa">
+                        <div class="card-body">
+                            <h5 class="card-title">Cải tạo và sửa chữa</h5>
+                            <p class="card-text">Chúng tôi cung cấp dịch vụ cải tạo và sửa chữa công trình chuyên nghiệp, nâng cấp không gian sống và khắc phục các hư hỏng nhanh chóng, hiệu quả.</p>
+                            <a href="services.html" class="btn btn-outline-primary">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Preview -->
+    <section class="projects-preview py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">DỰ ÁN NỔI BẬT</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-item">
+                        <img src="images/du-an-noi-bat-4.jpg" class="img-fluid" alt="Dự án căn hộ">
+                        <div class="project-overlay">
+                            <h5>Căn hộ hiện đại</h5>
+                            <p>Thiết kế & Thi công</p>
+                            <a href="projects.html" class="btn btn-outline-light">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-item">
+                        <img src="images/du-an-noi-bat-1.jpg" class="img-fluid" alt="Dự án nhà phố">
+                        <div class="project-overlay">
+                            <h5>Nhà phố cao cấp</h5>
+                            <p>Thiết kế & Thi công</p>
+                            <a href="projects.html" class="btn btn-outline-light">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-item">
+                        <img src="images/du-an-noi-bat-2.jpg" class="img-fluid" alt="Dự án văn phòng">
+                        <div class="project-overlay">
+                            <h5>Văn phòng hiện đại</h5>
+                            <p>Thiết kế & Thi công</p>
+                            <a href="projects.html" class="btn btn-outline-light">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="projects.html" class="btn btn-primary">Xem tất cả dự án</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-9 mb-4 mb-lg-0">
+                    <h3 class="mb-2">Bạn đang có dự định xây dựng hoặc cải tạo không gian sống?</h3>
+                    <p class="lead mb-0">Hãy để chúng tôi giúp bạn hiện thực hóa ý tưởng của mình!</p>
+                </div>
+                <div class="col-lg-3 text-lg-end">
+                    <a href="contact.html" class="btn btn-light btn-lg">Liên hệ ngay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">KHÁCH HÀNG NÓI GÌ VỀ CHÚNG TÔI</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card p-4 bg-white shadow-sm">
+                        <div class="rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="testimonial-text">"Tôi rất hài lòng với dịch vụ thiết kế và thi công nội thất của công ty. Đội ngũ nhân viên chuyên nghiệp, sản phẩm chất lượng và đúng tiến độ."</p>
+                        <div class="testimonial-author d-flex align-items-center mt-3">
+                            <img src="images/client1.jpg" class="rounded-circle me-3" width="50" height="50" alt="Khách hàng">
+                            <div>
+                                <h6 class="mb-0">Nguyễn Văn An</h6>
+                                <small class="text-muted">Chủ căn hộ tại TP.HCM</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card p-4 bg-white shadow-sm">
+                        <div class="rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="testimonial-text">"Thiết kế rất sáng tạo và phù hợp với yêu cầu của gia đình tôi. Đội ngũ thi công tay nghề cao, hoàn thành đúng tiến độ và chi phí phù hợp."</p>
+                        <div class="testimonial-author d-flex align-items-center mt-3">
+                            <img src="images/client2.jpg" class="rounded-circle me-3" width="50" height="50" alt="Khách hàng">
+                            <div>
+                                <h6 class="mb-0">Trần Thị Bích</h6>
+                                <small class="text-muted">Chủ biệt thự tại Hà Nội</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card p-4 bg-white shadow-sm">
+                        <div class="rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="testimonial-text">"Công ty đã thiết kế và thi công văn phòng mới của chúng tôi. Không gian làm việc hiện đại, sáng tạo và rất được nhân viên yêu thích."</p>
+                        <div class="testimonial-author d-flex align-items-center mt-3">
+                            <img src="images/client3.jpg" class="rounded-circle me-3" width="50" height="50" alt="Khách hàng">
+                            <div>
+                                <h6 class="mb-0">Lê Văn Hoàng</h6>
+                                <small class="text-muted">Giám đốc công ty Cồn Cát</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-4">THIẾT KẾ VÀ XÂY DỰNG ĐẠI CÁT</h5>
+                    <p>Chúng tôi tự hào là đơn vị thiết kế và thi công nội thất cao cấp hàng đầu Việt Nam với hơn 10 năm kinh nghiệm trong lĩnh vực.</p>
+                    <div class="social-icons mt-4">
+                        <a href="https://www.facebook.com/profile.php?id=61574949336067&mibextid=wwXIfr" target="_blank" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-4">LIÊN HỆ</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> 123 Đường ABC, Quận XYZ, TP.HCM</p>
+                    <p><i class="fas fa-phone me-2"></i> 0123 456 789</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@daicatdesign.com</p>
+                    <p><i class="fab fa-facebook-square me-2"></i> <a href="https://www.facebook.com/profile.php?id=61574949336067&mibextid=wwXIfr" target="_blank" class="text-white">Fanpage Facebook</a></p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-4">ĐĂNG KÝ NHẬN TIN</h5>
+                    <p>Đăng ký để nhận thông tin mới nhất về các dự án và khuyến mãi từ chúng tôi.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Email của bạn">
+                            <button class="btn btn-primary" type="submit">Đăng ký</button>
+                        </div>
+                    </form>
+                    <div class="mt-3">
+                        <a href="https://www.facebook.com/profile.php?id=61574949336067&mibextid=wwXIfr" target="_blank" class="btn btn-outline-light w-100"><i class="fab fa-facebook-f me-2"></i> Theo dõi trên Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0"> 2025 Thiết Kế Và Thi Công Xây Dựng ĐẠI CÁT. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
